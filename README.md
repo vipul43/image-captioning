@@ -6,9 +6,12 @@
 # MODELS TRAINED IN THIS REPO
 ## Branch master
 <img src="images/model1_arch.png">
+
 ## Branch deep_arch
 <img src="images/model2_arch.png">
+
 ## Branch deep_arch2
 <img src="images/model3_arch.png">
+
 ## Branch resnet152V2
 <img src="images/model4_arch.png">

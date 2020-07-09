@@ -1,0 +1,27 @@
+{
+    "root": "/Users/vipul/Documents/coding/image_captioning",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "https://github.com/vipul43/image_captioning.git",
+        "commit": "9e6f9faa36879ff470eee845b78dedf25d78c8d5"
+    },
+    "email": "saifunny43@gmail.com",
+    "codePath": "image_captioning_with_keras4.ipynb",
+    "startedAt": "2020-07-09T18:09:15.281596",
+    "host": "Sais-Air",
+    "username": "vipul",
+    "executable": "/Users/vipul/anaconda3/bin/python",
+    "os": "Darwin-19.5.0-x86_64-i386-64bit",
+    "python": "3.7.4",
+    "cpu_count": 4,
+    "args": [
+        "-f",
+        "/Users/vipul/Library/Jupyter/runtime/kernel-06c038f5-9cbe-4745-805b-059410b3cef9.json"
+    ],
+    "state": "running",
+    "jobType": null,
+    "mode": "run",
+    "name": "dauntless-bush-1",
+    "project": "model5",
+    "heartbeatAt": "2020-07-09T18:09:18.927295"
+}

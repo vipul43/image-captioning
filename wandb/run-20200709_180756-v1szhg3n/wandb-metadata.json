@@ -3,11 +3,11 @@
     "program": "<python with no main file>",
     "git": {
         "remote": "https://github.com/vipul43/image_captioning.git",
-        "commit": "9e6f9faa36879ff470eee845b78dedf25d78c8d5"
+        "commit": "44bd07e88e6c7127e9c66d5d68180a89d1e08727"
     },
     "email": "saifunny43@gmail.com",
     "codePath": "image_captioning_with_keras4.ipynb",
-    "startedAt": "2020-07-09T18:09:15.281596",
+    "startedAt": "2020-07-10T06:49:38.879974",
     "host": "Sais-Air",
     "username": "vipul",
     "executable": "/Users/vipul/anaconda3/bin/python",
@@ -23,5 +23,5 @@
     "mode": "run",
     "name": "dauntless-bush-1",
     "project": "model5",
-    "heartbeatAt": "2020-07-09T18:09:18.927295"
+    "heartbeatAt": "2020-07-10T06:49:42.611434"
 }

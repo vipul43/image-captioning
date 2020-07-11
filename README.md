@@ -15,3 +15,6 @@
 
 ## Branch resnet152V2
 <img src="images/model4_arch.png">
+
+## Branch resnet152V2
+<img src="images/model5_arch.png">

@@ -9,4 +9,4 @@
 ## Branch deep_arch
 ![alt text](https://github.com/vipul43/image_captioning/blob/resNet152V2/images/model2_arch.png?raw=true)
 ## Branch deep_arch2
-![alt text](https://github.com/vipul43/image_captioning/blob/resNet152v2/images/model3_arch.png?raw=true)
+![alt text](https://github.com/vipul43/image_captioning/blob/resNet152V2/images/model3_arch.png?raw=true)

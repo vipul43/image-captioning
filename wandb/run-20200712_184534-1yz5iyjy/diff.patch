@@ -1,0 +1,10 @@
+diff --git a/images/model5_performace.png b/images/model5_performace.png
+deleted file mode 100644
+index c5c6347..0000000
+Binary files a/images/model5_performace.png and /dev/null differ
+diff --git a/wandb/debug.log b/wandb/debug.log
+index e69de29..44e6c25 100644
+--- a/wandb/debug.log
++++ b/wandb/debug.log
+@@ -0,0 +1 @@
++2020-07-12 11:27:42,994 DEBUG   MainThread:24474 [wandb_config.py:_load_defaults():129] wandb dir not provided, skipping defaults

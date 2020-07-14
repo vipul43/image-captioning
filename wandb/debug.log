@@ -1,2 +1,3 @@
 2020-07-14 10:40:17,929 DEBUG   MainThread:67146 [wandb_config.py:_load_defaults():129] wandb dir not provided, skipping defaults
 2020-07-14 10:58:36,815 DEBUG   MainThread:67146 [wandb_config.py:_load_defaults():129] wandb dir not provided, skipping defaults
+2020-07-14 11:07:09,408 DEBUG   MainThread:67146 [wandb_config.py:_load_defaults():129] wandb dir not provided, skipping defaults

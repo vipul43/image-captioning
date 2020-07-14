@@ -6,14 +6,16 @@
 ## Keras Applications API Resourse: https://keras.io/api/applications/
 # MODELS TRAINED IN THIS REPO
 ## Branch master
-![alt text](https://github.com/vipul43/image_captioning/blob/InceptionResNetV2/images/model1_arch.png?raw=true)
+![alt text](https://github.com/vipul43/image_captioning/blob/deep_arch3/images/model1_arch.png?raw=true)
 ## Branch deep_arch
-![alt text](https://github.com/vipul43/image_captioning/blob/InceptionResNetV2/images/model2_arch.png?raw=true)
+![alt text](https://github.com/vipul43/image_captioning/blob/deep_arch3/images/model2_arch.png?raw=true)
 ## Branch deep_arch2
-![alt text](https://github.com/vipul43/image_captioning/blob/InceptionResNetV2/images/model3_arch.png?raw=true)
+![alt text](https://github.com/vipul43/image_captioning/blob/deep_arch3/images/model3_arch.png?raw=true)
 ## Branch resNet152V2
-![alt text](https://github.com/vipul43/image_captioning/blob/InceptionResNetV2/images/model4_arch.png?raw=true)
+![alt text](https://github.com/vipul43/image_captioning/blob/deep_arch3/images/model4_arch.png?raw=true)
 ## Branch resNet152V2
-![alt text](https://github.com/vipul43/image_captioning/blob/InceptionResNetV2/images/model5_arch.png?raw=true)
+![alt text](https://github.com/vipul43/image_captioning/blob/deep_arch3/images/model5_arch.png?raw=true)
 ## Branch InceptionResNetV2
-![alt text](https://github.com/vipul43/image_captioning/blob/InceptionResNetV2/images/model6_arch.png?raw=true)
+![alt text](https://github.com/vipul43/image_captioning/blob/deep_arch3/images/model6_arch.png?raw=true)
+## Branch deep_arch3
+![alt text](https://github.com/vipul43/image_captioning/blob/deep_arch3/images/model7_arch.png?raw=true)

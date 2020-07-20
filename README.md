@@ -19,3 +19,5 @@
 ![alt text](https://github.com/vipul43/image_captioning/blob/deep_arch3/images/model6_arch.png?raw=true)
 ## Branch deep_arch3
 ![alt text](https://github.com/vipul43/image_captioning/blob/deep_arch3/images/model7_arch.png?raw=true)
+## Branch deep_arch3
+![alt text](https://github.com/vipul43/image_captioning/blob/deep_arch3/images/model8_arch.png?raw=true)

@@ -1,0 +1,27 @@
+{
+    "root": "/Users/vipul/Documents/coding/image_captioning",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "https://github.com/vipul43/image_captioning.git",
+        "commit": "c0508b1bb75b2dd30b94d9a858ca3fcc8df50bd9"
+    },
+    "email": "saifunny43@gmail.com",
+    "codePath": "image_captioning_with_keras6.ipynb",
+    "startedAt": "2020-07-14T00:00:04.806828",
+    "host": "Sais-Air",
+    "username": "vipul",
+    "executable": "/Users/vipul/anaconda3/bin/python",
+    "os": "Darwin-19.5.0-x86_64-i386-64bit",
+    "python": "3.7.4",
+    "cpu_count": 4,
+    "args": [
+        "-f",
+        "/Users/vipul/Library/Jupyter/runtime/kernel-f583c75b-2067-4e42-b342-5ba8e14b6d3d.json"
+    ],
+    "state": "running",
+    "jobType": null,
+    "mode": "run",
+    "name": "wandering-pine-1",
+    "project": "model7",
+    "heartbeatAt": "2020-07-14T00:48:18.286172"
+}

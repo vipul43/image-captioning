@@ -1,0 +1,27 @@
+{
+    "root": "/Users/vipul/Documents/coding/image_captioning",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "https://github.com/vipul43/image_captioning.git",
+        "commit": "08526fdc99d62dba7d960ac918da19bd35593f4d"
+    },
+    "email": "saifunny43@gmail.com",
+    "codePath": "image_captioning_with_keras7.ipynb",
+    "startedAt": "2020-07-14T23:15:18.510849",
+    "host": "Sais-Air",
+    "username": "vipul",
+    "executable": "/Users/vipul/anaconda3/bin/python",
+    "os": "Darwin-19.5.0-x86_64-i386-64bit",
+    "python": "3.7.4",
+    "cpu_count": 4,
+    "args": [
+        "-f",
+        "/Users/vipul/Library/Jupyter/runtime/kernel-30fa8d34-1024-40a7-85ba-b58f14194def.json"
+    ],
+    "state": "running",
+    "jobType": null,
+    "mode": "run",
+    "name": "feasible-wave-1",
+    "project": "model8",
+    "heartbeatAt": "2020-07-15T00:07:04.107964"
+}

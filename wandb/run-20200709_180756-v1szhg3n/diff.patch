@@ -1,0 +1,207 @@
+diff --git a/wandb/.DS_Store b/wandb/.DS_Store
+index e532a4d..638a312 100644
+Binary files a/wandb/.DS_Store and b/wandb/.DS_Store differ
+diff --git a/wandb/run-20200709_180756-v1szhg3n/code/_session_history.ipynb b/wandb/run-20200709_180756-v1szhg3n/code/_session_history.ipynb
+index bbe7c06..3a68131 100644
+--- a/wandb/run-20200709_180756-v1szhg3n/code/_session_history.ipynb
++++ b/wandb/run-20200709_180756-v1szhg3n/code/_session_history.ipynb
+@@ -341,6 +341,123 @@
+     "wandb.config.epochs=20\n",
+     "wandb.config.batch_size=3"
+    ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": 9,
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "#TRAINING SESSION 1\n",
++    "for i in range(epochs):\n",
++    "    generator = data_generator(train_dataset, encoded_train_images, word_to_index, max_caption_length, batch_size)\n",
++    "    hist = model5.fit_generator(generator, epochs=1, steps_per_epoch=steps, verbose=1)\n",
++    "    loss = hist.history['loss']\n",
++    "    wandb.log({'epoch': i, 'loss': loss})\n",
++    "model5.save('./model5_weights/model_' + str(0) + '.h5')"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": 10,
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "#HYPERPARAMETERS OF TRAINING SESSION 2\n",
++    "#NOTE: LEARNING RATE IS CHANGED TO 0.0001\n",
++    "K.set_value(model.optimizer.lr, 0.0003)\n",
++    "epochs = 10\n",
++    "batch_size = 6\n",
++    "steps = len(train_dataset)//batch_size\n",
++    "#NOTE: SIZE OF TRAIN DATASET IS 6000"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": 11,
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "#HYPERPARAMETERS OF TRAINING SESSION 2\n",
++    "#NOTE: LEARNING RATE IS CHANGED TO 0.0003\n",
++    "K.set_value(model5.optimizer.lr, 0.0003)\n",
++    "epochs = 5\n",
++    "batch_size = 4\n",
++    "steps = len(train_dataset)//batch_size\n",
++    "#NOTE: SIZE OF TRAIN DATASET IS 6000"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": 12,
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "#TRAINING SESSION 2\n",
++    "for i in range(epochs):\n",
++    "    generator = data_generator(train_dataset, encoded_train_images, word_to_index, max_caption_length, batch_size)\n",
++    "    hist = model5.fit_generator(generator, epochs=1, steps_per_epoch=steps, verbose=1)\n",
++    "    loss = hist.history['loss']\n",
++    "    wandb.log({'epoch': i+20, 'loss': loss})\n",
++    "model5.save('./model5_weights/model_' + str(1) + '.h5')"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": 13,
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "#HYPERPARAMETERS OF TRAINING SESSION 3\n",
++    "#NOTE: LEARNING RATE IS CHANGED TO 0.0001\n",
++    "K.set_value(model5.optimizer.lr, 0.0001)\n",
++    "epochs = 5\n",
++    "batch_size = 6\n",
++    "steps = len(train_dataset)//batch_size\n",
++    "#NOTE: SIZE OF TRAIN DATASET IS 6000"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": 14,
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "#TRAINING SESSION 3\n",
++    "for i in range(epochs):\n",
++    "    generator = data_generator(train_dataset, encoded_train_images, word_to_index, max_caption_length, batch_size)\n",
++    "    hist = model5.fit_generator(generator, epochs=1, steps_per_epoch=steps, verbose=1)\n",
++    "    loss = hist.history['loss']\n",
++    "    wandb.log({'epoch': i+25, 'loss': loss})\n",
++    "model5.save('./model5_weights/model_' + str(2) + '.h5')"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": 15,
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "#LOADING TRAINED WEIGHTS TO MODEL\n",
++    "model5.load_weights('./model5_weights/model_2.h5')"
++   ]
++  },
++  {
++   "cell_type": "code",
++   "execution_count": 16,
++   "metadata": {},
++   "outputs": [
++    {
++     "name": "stdout",
++     "output_type": "stream",
++     "text": [
++      "[]"
++     ]
++    }
++   ],
++   "source": [
++    "wandb.save(\"model5.h5\")"
++   ]
+   }
+  ],
+  "metadata": {
+diff --git a/wandb/run-20200709_180756-v1szhg3n/diff.patch b/wandb/run-20200709_180756-v1szhg3n/diff.patch
+index 0706fcc..e69de29 100644
+--- a/wandb/run-20200709_180756-v1szhg3n/diff.patch
++++ b/wandb/run-20200709_180756-v1szhg3n/diff.patch
+@@ -1,6 +0,0 @@
+-diff --git a/.DS_Store b/.DS_Store
+-index 79a4b11..6b09eb6 100644
+-Binary files a/.DS_Store and b/.DS_Store differ
+-diff --git a/images/.DS_Store b/images/.DS_Store
+-index 26b085c..e15d0cd 100644
+-Binary files a/images/.DS_Store and b/images/.DS_Store differ
+diff --git a/wandb/run-20200709_180756-v1szhg3n/wandb-events.jsonl b/wandb/run-20200709_180756-v1szhg3n/wandb-events.jsonl
+index c88f681..7e0d6b1 100644
+--- a/wandb/run-20200709_180756-v1szhg3n/wandb-events.jsonl
++++ b/wandb/run-20200709_180756-v1szhg3n/wandb-events.jsonl
+@@ -1,3 +1,10 @@
+-{"system.network.sent":16384,"system.network.recv":74752,"system.disk":34.5,"_wandb":true,"_runtime":4,"system.proc.memory.rssMB":300.37,"system.proc.memory.availableMB":4362.73,"system.cpu":12.6,"system.proc.cpu.threads":17.5,"system.memory":46.7,"system.proc.memory.percent":3.67,"_timestamp":1594318080}
+-{"system.network.sent":11264,"system.network.recv":68608,"system.disk":35.7,"_wandb":true,"_runtime":6,"system.proc.memory.rssMB":2680.88,"system.proc.memory.availableMB":3362.37,"system.cpu":27.9,"system.proc.cpu.threads":33.5,"system.memory":59,"system.proc.memory.percent":32.73,"_timestamp":1594318130}
+-{"system.cpu": 8.53, "system.memory": 59.17, "system.disk": 35.7, "system.proc.memory.availableMB": 3345.58, "system.proc.memory.rssMB": 2686.47, "system.proc.memory.percent": 32.79, "system.proc.cpu.threads": 34.0, "system.network.sent": 13312, "system.network.recv": 69632, "_wandb": true, "_timestamp": 1594318158, "_runtime": 9}
++{"system.network.sent":11294720,"system.network.recv":11480064,"system.disk":34,"_wandb":true,"_runtime":62388,"system.proc.memory.rssMB":392.98,"system.proc.memory.availableMB":2231.79,"system.cpu":89.11,"system.proc.cpu.threads":42,"system.memory":72.75,"system.proc.memory.percent":4.8,"_timestamp":1594363251}
++{"system.network.sent":11450368,"system.network.recv":11635712,"system.disk":34,"_wandb":true,"_runtime":62419,"system.proc.memory.rssMB":408.72,"system.proc.memory.availableMB":2221.81,"system.cpu":88.85,"system.proc.cpu.threads":42,"system.memory":72.87,"system.proc.memory.percent":4.99,"_timestamp":1594363282}
++{"system.network.sent":11632640,"system.network.recv":11817984,"system.disk":34,"_wandb":true,"_runtime":62450,"system.proc.memory.rssMB":396.31,"system.proc.memory.availableMB":2225.62,"system.cpu":89.05,"system.proc.cpu.threads":42,"system.memory":72.83,"system.proc.memory.percent":4.84,"_timestamp":1594363313}
++{"system.network.sent":11782144,"system.network.recv":11966464,"system.disk":34,"_wandb":true,"_runtime":62481,"system.proc.memory.rssMB":390.86,"system.proc.memory.availableMB":2232.4,"system.cpu":88.95,"system.proc.cpu.threads":42,"system.memory":72.75,"system.proc.memory.percent":4.77,"_timestamp":1594363344}
++{"system.network.sent":11945984,"system.network.recv":12134400,"system.disk":34,"_wandb":true,"_runtime":62512,"system.proc.memory.rssMB":399.38,"system.proc.memory.availableMB":2225.19,"system.cpu":89.05,"system.proc.cpu.threads":42,"system.memory":72.84,"system.proc.memory.percent":4.88,"_timestamp":1594363375}
++{"system.network.sent":12111872,"system.network.recv":12308480,"system.disk":34,"_wandb":true,"_runtime":62543,"system.proc.memory.rssMB":397.2,"system.proc.memory.availableMB":2224.82,"system.cpu":89.26,"system.proc.cpu.threads":42,"system.memory":72.83,"system.proc.memory.percent":4.85,"_timestamp":1594363406}
++{"system.network.sent":12367872,"system.network.recv":12780544,"system.disk":34,"_wandb":true,"_runtime":62573,"system.proc.memory.rssMB":429.59,"system.proc.memory.availableMB":2155.91,"system.cpu":88.63,"system.proc.cpu.threads":42,"system.memory":73.68,"system.proc.memory.percent":5.24,"_timestamp":1594363436}
++{"system.network.sent":12609536,"system.network.recv":13049856,"system.disk":34,"_wandb":true,"_runtime":62604,"system.proc.memory.rssMB":416.63,"system.proc.memory.availableMB":2138.8,"system.cpu":88.37,"system.proc.cpu.threads":42,"system.memory":73.89,"system.proc.memory.percent":5.09,"_timestamp":1594363467}
++{"system.network.sent":12657664,"system.network.recv":13097984,"system.disk":34.02,"_wandb":true,"_runtime":65533,"system.proc.memory.rssMB":363.74,"system.proc.memory.availableMB":2211.59,"system.cpu":87.33,"system.proc.cpu.threads":40.75,"system.memory":73.03,"system.proc.memory.percent":4.44,"_timestamp":1594363475}
++{"system.network.sent":67584,"system.network.recv":173056,"system.disk":34.1,"_wandb":true,"_runtime":65541,"system.proc.memory.rssMB":264.64,"system.proc.memory.availableMB":2202.27,"system.cpu":44.9,"system.proc.cpu.threads":38.33,"system.memory":73.1,"system.proc.memory.percent":3.23,"_timestamp":1594363499}
+diff --git a/wandb/run-20200709_180756-v1szhg3n/wandb-history.jsonl b/wandb/run-20200709_180756-v1szhg3n/wandb-history.jsonl
+index e69de29..0b44f2a 100644
+--- a/wandb/run-20200709_180756-v1szhg3n/wandb-history.jsonl
++++ b/wandb/run-20200709_180756-v1szhg3n/wandb-history.jsonl
+@@ -0,0 +1,10 @@
++{"loss":[2.4872750570117628],"_step":20,"_runtime":53864.07745838165,"epoch":20,"_timestamp":1.594357942832602e+09}
++{"loss":[2.4403327980257243],"_step":21,"_runtime":54507.805215358734,"epoch":21,"_timestamp":1.594358586560359e+09}
++{"loss":[2.4193143937042993],"_step":22,"_runtime":55161.98645949364,"epoch":22,"_timestamp":1.5943592407416031e+09}
++{"loss":[2.4038516900764075],"_step":23,"_runtime":55806.94720029831,"epoch":23,"_timestamp":1.594359885702344e+09}
++{"loss":[2.3911808606328213],"_step":24,"_runtime":56447.221165418625,"epoch":24,"_timestamp":1.594360525976309e+09}
++{"loss":[2.3837825693250245],"_step":25,"_runtime":60270.20295572281,"epoch":25,"_timestamp":1.594361131123758e+09}
++{"loss":[2.365913628557235],"_step":26,"_runtime":60850.64410972595,"epoch":26,"_timestamp":1.594361711564912e+09}
++{"loss":[2.3606770943823467],"_step":27,"_runtime":61429.163400650024,"epoch":27,"_timestamp":1.594362290084203e+09}
++{"loss":[2.352702132474857],"_step":28,"_runtime":62014.59316158295,"epoch":28,"_timestamp":1.594362875513964e+09}
++{"loss":[2.3504356016131682],"_step":29,"_runtime":62614.167704582214,"epoch":29,"_timestamp":1.594363475088507e+09}
+diff --git a/wandb/run-20200709_180756-v1szhg3n/wandb-metadata.json b/wandb/run-20200709_180756-v1szhg3n/wandb-metadata.json
+index 0055086..9ca20ca 100644
+--- a/wandb/run-20200709_180756-v1szhg3n/wandb-metadata.json
++++ b/wandb/run-20200709_180756-v1szhg3n/wandb-metadata.json
+@@ -3,11 +3,11 @@
+     "program": "<python with no main file>",
+     "git": {
+         "remote": "https://github.com/vipul43/image_captioning.git",
+-        "commit": "9e6f9faa36879ff470eee845b78dedf25d78c8d5"
++        "commit": "44bd07e88e6c7127e9c66d5d68180a89d1e08727"
+     },
+     "email": "saifunny43@gmail.com",
+     "codePath": "image_captioning_with_keras4.ipynb",
+-    "startedAt": "2020-07-09T18:09:15.281596",
++    "startedAt": "2020-07-10T06:49:38.879974",
+     "host": "Sais-Air",
+     "username": "vipul",
+     "executable": "/Users/vipul/anaconda3/bin/python",
+@@ -23,5 +23,5 @@
+     "mode": "run",
+     "name": "dauntless-bush-1",
+     "project": "model5",
+-    "heartbeatAt": "2020-07-09T18:09:18.927295"
++    "heartbeatAt": "2020-07-10T06:49:38.950810"
+ }
+diff --git a/wandb/run-20200709_180756-v1szhg3n/wandb-summary.json b/wandb/run-20200709_180756-v1szhg3n/wandb-summary.json
+index 0967ef4..caefd79 100644
+--- a/wandb/run-20200709_180756-v1szhg3n/wandb-summary.json
++++ b/wandb/run-20200709_180756-v1szhg3n/wandb-summary.json
+@@ -1 +1 @@
+-{}
++{"_runtime": 14084.186804294586, "loss": [2.563541495968192], "epoch": 19, "_timestamp": 1594332239.4684002, "_step": 19}

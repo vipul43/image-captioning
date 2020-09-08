@@ -1,0 +1,27 @@
+{
+    "root": "/Users/vipul/Documents/coding/image_captioning",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "https://github.com/vipul43/image_captioning.git",
+        "commit": "41b2c1187885e2a45b4db7107adabb179ab221f7"
+    },
+    "email": "saifunny43@gmail.com",
+    "codePath": "image_captioning_with_keras5.ipynb",
+    "startedAt": "2020-07-13T05:14:22.487300",
+    "host": "Sais-MacBook-Air.local",
+    "username": "vipul",
+    "executable": "/Users/vipul/anaconda3/bin/python",
+    "os": "Darwin-19.5.0-x86_64-i386-64bit",
+    "python": "3.7.4",
+    "cpu_count": 4,
+    "args": [
+        "-f",
+        "/Users/vipul/Library/Jupyter/runtime/kernel-7976f717-f818-404b-a121-1fb2a05b14d9.json"
+    ],
+    "state": "running",
+    "jobType": null,
+    "mode": "run",
+    "name": "wise-snowflake-1",
+    "project": "model6",
+    "heartbeatAt": "2020-07-13T06:02:43.248695"
+}
